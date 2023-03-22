@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+/* 배경색 #ffffff
+글씨색 #333333 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  display: block;
+}
+body {
+  background: #ffffff;
+  color: #333333;
+}
+
+.wrap {
+  width: 1200px;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background: #d9ccff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 20%;
+  display: flex; /*로고 이미지를 중앙에 위치 시키기 위해 flex로 지정하여 수평, 수직 정렬이 되도록 하기 위해.*/
+  justify-content: center; /* 수평 가운데 정렬 */
+  align-items: center; /* 수직 가운데 정렬 */
+}
+
+.logo > img {
+  width: 200px;
+  height: 40px;
+}
+
+/* 메인 메뉴 */
+
+.mainMenu {
+  width: 700px; /*서브메뉴랑 동일하게*/
+  height: 100%; /*header의 높이 그대로 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative; /*subMenu때문에 반드시 필요*/
+}
+
+.mainMenu > a {
+  width: 25%;
+  padding: 20px 0;
+  text-align: center;
+  color: #080606;
+}
+.mainMenu > a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.subMenu {
+  width: 700px; /*메인메뉴 위치랑 동일하게*/
+  display: flex;
+  justify-content: space-between;
+  background: #e6eafe;
+  position: absolute;
+  right: 0;
+  top: 100px; /*header 높이 만큼 내려옴*/
+  z-index: 1;
+}
+.subMenu > ul {
+  width: 25%;
+}
+.subMenu > ul > li > a {
+  text-align: center;
+  padding: 10px 0;
+  color: #723ffb;
+}
+.subMenu > ul > li > a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
