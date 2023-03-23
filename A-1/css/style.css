@@ -20,12 +20,12 @@ body {
 
 .wrap {
   width: 1200px;
+  margin: 0 auto;
 }
 
 header {
   width: 100%;
   height: 100px;
-  background: #d9ccff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -85,4 +85,158 @@ header {
 .subMenu > ul > li > a:hover {
   background: rgba(255, 255, 255, 0.1);
   color: #ffffff;
+}
+
+/* 이미지 슬라이드 */
+.slideContainer {
+  width: 1200px;
+  height: 300px;
+  overflow: hidden;
+}
+.slide {
+  position: relative;
+}
+.slide p {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgb(255, 245, 245);
+  padding: 10px 20px;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  height: 200px;
+}
+.content > * {
+  width: 400px;
+  height: 200px;
+}
+
+/*tab*/
+.tabMenu li {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+}
+.tabMenu li a {
+  display: block;
+  padding: 10px;
+}
+.tabMenu li.on a {
+  background: rgb(255, 245, 245);
+}
+
+.tabItem > * {
+  height: 156px;
+  padding: 10px;
+}
+.tabItem > *.on {
+  background: rgb(255, 245, 245);
+}
+
+.notice li {
+  display: flex;
+  line-height: 2.2;
+}
+.notice li a {
+  display: inline-block;
+  width: 260px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.notice li span {
+  margin-left: auto;
+}
+.notice li:hover {
+  text-decoration: underline;
+}
+
+.gallery {
+  display: none;
+}
+.gallery li {
+  display: inline-block;
+  width: 32%;
+  margin-top: 8px;
+}
+.gallery a img {
+  width: 100%;
+}
+
+.banner,
+.link {
+  position: relative;
+}
+.banner h2,
+.link h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-weight: 600;
+  background: #fff;
+  padding: 10px;
+}
+
+footer {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  background: #eee;
+}
+footer .footerLogo {
+  display: block;
+  width: 200px;
+  height: 40px;
+  font-size: 0px;
+  color: transparent;
+}
+footer p {
+  width: 70%;
+  text-align: center;
+}
+footer .sns {
+  display: flex;
+}
+footer .sns a img {
+  display: inline-block;
+  width: 20px;
+  margin-left: 20px;
+}
+
+/* popUpBox ---------------------------------------------------------------------------------------------------*/
+.popUpBox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  display: none;
+}
+.popUp {
+  position: absolute;
+  width: 600px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 2;
+  border: 1px solid #000;
+  background: #fff;
+  padding: 20px;
+}
+.popUp p {
+  font-size: 15px;
+  margin-top: 10px;
+}
+.popUp div {
+  margin-top: 30px;
+}
+.popUp button {
+  float: right;
+  padding: 4px;
+  cursor: pointer;
 }

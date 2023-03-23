@@ -11,6 +11,13 @@
   </head>
   <body>
     <div class="wrap">
+      <div class="popUpBox">
+        <div class="popUp">
+          <h2>A-1 JUST 쇼핑몰 팝업 제목</h2>
+          <p>여기에 팝업 내용을 작성합니다</p>
+          <button>X 닫기</button>
+        </div>
+      </div>
       <header>
         <a class="logo" href="#">
           <img src="./images/logo.png" alt="로고" />
@@ -48,17 +55,94 @@
           </nav>
         </nav>
       </header>
-      <div>이미지슬라이드</div>
-      <div>
-        <div>공지사항</div>
-        <div>배너</div>
-        <div>바로가기</div>
+
+      <div class="slideContainer">
+        <div class="slideWrap">
+          <div class="slide">
+            <p>이벤트1</p>
+            <a href="#"><img src="images/img1.jpg" alt="슬라이드이미지1" /></a>
+          </div>
+          <div class="slide">
+            <p>이벤트2</p>
+            <a href="#"><img src="images/img2.jpg" alt="슬라이드이미지2" /></a>
+          </div>
+          <div class="slide">
+            <p>이벤트3</p>
+            <a href="#"><img src="images/img3.jpg" alt="슬라이드이미지3" /></a>
+          </div>
+        </div>
       </div>
-      <div>
-        <div>로고</div>
-        <div>copywright</div>
-        <div>SNS</div>
+
+      <div class="content">
+        <div class="tab">
+          <ul class="tabMenu">
+            <li class="on"><a href="#">공지사항</a></li>
+            <li><a href="#">갤러리</a></li>
+          </ul>
+
+          <div class="tabItem">
+            <ul class="notice on">
+              <li>
+                <a href="#">오늘부터 카카오페이를 사용할 수 있습니다.</a
+                ><span>2023.01.23</span>
+              </li>
+              <li>
+                <a href="#">KT 롤스터 결승가면 무료로 옷 풉니다.</a
+                ><span>2023.02.28</span>
+              </li>
+              <li>
+                <a href="#">곧 만우절이므로 반값이벤트함. 뻥임</a
+                ><span>2023.03.24</span>
+              </li>
+              <li>
+                <a href="#">벚꽃 피는 봄 기념 패딩할인</a
+                ><span>2023.04.02</span>
+              </li>
+            </ul>
+            <ul class="gallery">
+              <li>
+                <a href="#"
+                  ><img src="images/gallery01.jpg" alt="갤러리이미지1"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/gallery02.jpg" alt="갤러리이미지2"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/gallery03.jpg" alt="갤러리이미지3"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="banner">
+          <a href="#"
+            ><h2>배너</h2>
+            <img src="images/banner.jpg" alt="배너이미지"
+          /></a>
+        </div>
+        <div class="link">
+          <a href="#"
+            ><h2>바로가기</h2>
+            <img src="images/link.jpg" alt="링크이미지"
+          /></a>
+        </div>
       </div>
+      <footer>
+        <a href="#" class="footerLogo"
+          >JUST쇼핑몰<img src="images/logo2.png" alt="JUST쇼핑몰 푸터 로고"
+        /></a>
+        <p>Copyright All rights reserved JUST 쇼핑몰</p>
+        <div class="sns">
+          <a href="#"><img src="images/sns1.png" alt="페이스북" /></a>
+          <a href="#"><img src="images/sns2.png" alt="인스타그램" /></a>
+          <a href="#"><img src="images/sns3.png" alt="트위터" /></a>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
