@@ -15,17 +15,16 @@ body {
 }
 
 .wrap {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 
 /* header */
 header {
-  position: relative;
-  display: flex;
-  height: 100px;
-  align-items: center;
-  /* background-color: rgb(72, 201, 46); */
+  width: 200px;
+  height: 100%;
+  padding-top: 30px;
+  background-color: #f3f5ff;
 }
 .headerBg {
   position: absolute;
@@ -33,47 +32,47 @@ header {
   height: 158px;
   left: 0;
   top: 100px;
-  background: rgb(98, 172, 83);
+  background: rgb(173, 184, 238);
   z-index: 997;
   display: none;
 }
-header h1 a {
-  display: block;
+header h1 {
   width: 200px;
   height: 40px;
 }
 header nav {
-  width: 600px;
-  margin: 60px 0px 0px 370px;
+  margin-top: 20px;
 }
 header nav > ul {
-  display: flex;
+  width: 180px;
+  padding-left: 14px;
 }
-header nav ul a {
+header nav a {
   display: block;
+  width: 100%;
   text-align: center;
-  background: #fff;
   padding: 10px;
 }
 li.lv1 {
   position: relative;
-  width: 25%;
 }
 ul.lv2 {
+  display: flex;
   position: absolute;
+  left: 160px;
+  top: 0px;
   width: 100%;
+  background: rgb(173, 184, 238);
   z-index: 998;
-  display: none;
 }
-ul.lv2 a {
-  color: #fff;
-  background: rgb(98, 172, 83);
+ul.lv2 > li {
+  width: 800px;
 }
-li.lv1:hover > a {
-  color: #fff;
-  background: rgb(31, 122, 39);
+.lv1:hover > a {
+  color: #ffffff;
+  background: rgb(173, 184, 238);
 }
-ul.lv2 li:hover a {
-  color: #333;
-  background: #fff;
+.lv2 li:hover > a {
+  color: #ffffff;
+  background: rgb(225, 230, 255);
 }
