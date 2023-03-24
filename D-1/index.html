@@ -1,16 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>D-1 연습</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="./script/script.js"></script>
+    <script src="./script/script.js" defer></script>
     <script src="./script/jquery-3.6.4.js"></script>
   </head>
   <body>
-    <div class="wrap"></div>
-    <footer>푸터</footer>
+    <div class="wrap">
+      <div class="popupBox">
+        <div class="popup">
+          <h2>조이컨트리클럽 오픈 이벤트</h2>
+          <p>
+            세상의 모서리 구부정하게 커버린 골칫거리 Outsider 걸음걸이 옷차림
+            이어폰 너머 Play list 음악까지 다 Minor 넌 모르지 떨군 고개 위 환한
+            빛 조명이 어딜 비추는지 느려도 좋으니 결국 알게 되길
+          </p>
+          <button>X 닫기</button>
+        </div>
+      </div>
+      <header>
+        <h1>
+          <a href="#"><img src="./images/logo.png" alt="로고" /></a>
+        </h1>
+        <nav>
+          <ul>
+            <!-- 메인 메뉴 리스트 lv1 -->
+            <li class="lv1">
+              <a href="#">CLUB</a>
+              <!-- 서브 메뉴 리스트 lv2 -->
+              <ul class="lv2">
+                <li><a href="#">클럽소개</a></li>
+                <li><a href="#">시설안내</a></li>
+              </ul>
+            </li>
+            <li class="lv1">
+              <a href="#">BOOKING</a>
+              <!-- 서브 메뉴 리스트 lv2 -->
+              <ul class="lv2">
+                <li><a href="#">요금안내</a></li>
+                <li><a href="#">예약안내</a></li>
+                <li><a href="#">위약안내</a></li>
+              </ul>
+            </li>
+            <li class="lv1">
+              <a href="#">INFORMATION</a>
+              <!-- 서브 메뉴 리스트 lv2 -->
+              <ul class="lv2">
+                <li><a href="#">명예의 전당</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">자료실</a></li>
+                <li><a href="#">포토갤러리</a></li>
+              </ul>
+            </li>
+            <li class="lv1">
+              <a href="#">COMMUNITY</a>
+              <!-- 서브 메뉴 리스트 lv2 -->
+              <ul class="lv2">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">Q&A</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="slide">
+          <ul>
+            <li class="slide01"><span>이미지 슬라이드 1</span></li>
+            <li class="slide02"><span>이미지 슬라이드 2</span></li>
+            <li class="slide03"><span>이미지 슬라이드 3</span></li>
+          </ul>
+        </div>
+        <div class="banner">
+          <ul>
+            <li>
+              <a href="#"><img src="./images/icon1.jpg" alt="배너1" /></a
+              ><span>배너1</span>
+            </li>
+            <li>
+              <a href="#"><img src="./images/icon2.jpg" alt="배너2" /></a
+              ><span>배너2</span>
+            </li>
+            <li>
+              <a href="#"><img src="./images/icon3.jpg" alt="배너3" /></a
+              ><span>배너3</span>
+            </li>
+          </ul>
+        </div>
+        <div class="direct">
+          <a href="#">
+            <img src="./images/banner.png" alt="배너" />
+            <p><span>오픈 이벤트 - 명예의 전당 등극 시 80% 할인</span></p>
+          </a>
+        </div>
+        <div class="tab">
+          <ul class="tabMenu">
+            <li class="on"><a href="#">공지사항</a></li>
+            <li><a href="#">갤러리</a></li>
+          </ul>
+
+          <div class="tabItem">
+            <ul class="notice on">
+              <li>
+                <a href="#">조이컨트리클럽 공지사항<span>2023.01.31</span></a>
+              </li>
+              <li>
+                <a href="#"
+                  >3월부터 카카오페이로 예약 가능합니다.<span
+                    >2023.02.18</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  >KT 롤스터 결승진출 시 80% 할인합니다.<span
+                    >2023.03.23</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  >벚꽃피면 커플 방문시 50% 할인합니다.<span
+                    >2023.03.25</span
+                  ></a
+                >
+              </li>
+            </ul>
+
+            <ul class="gallery">
+              <li>
+                <a href="#"
+                  ><img src="./images/gallery01.jpg" alt="갤러리 사진1" /><span
+                    >갤러리 사진 1</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./images/gallery02.jpg" alt="갤러리 사진2" /><span
+                    >갤러리 사진 2</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./images/gallery03.jpg" alt="갤러리 사진3" /><span
+                    >갤러리 사진 3</span
+                  ></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <div>
+        <a href="#"><img src="./images/logo.png" alt="logo" /></a>
+      </div>
+      <p>
+        경기도 양평시 가나구 1-24대로 3 대표번호 : 3333-4444 | FAX : (031)
+        5555-4444<br />
+        COPYRIGHT 2023 조이컨트리클럽. ALLRIGHT RESERVED.
+      </p>
+      <ul>
+        <li>
+          <a href="#"><img src="./images/sns1.png" alt="SNS1" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./images/sns2.png" alt="SNS2" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./images/sns3.png" alt="SNS3" /></a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
