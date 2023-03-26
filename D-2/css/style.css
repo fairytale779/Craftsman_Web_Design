@@ -1,0 +1,271 @@
+@charset "uft-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  display: block;
+  /* color: #333; */
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+}
+
+.wrap {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  height: 650px;
+}
+
+/* header */
+header {
+  width: 200px;
+  height: 650px;
+  background-color: rgb(201, 219, 236);
+}
+header h1 {
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+header nav {
+  margin-top: 50px;
+}
+header nav > ul {
+  width: 180px;
+  margin-left: 10px;
+}
+
+header nav a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  color: #333;
+  padding: 10px;
+}
+li.lv1 {
+  border-bottom: 1px solid #9eb8e0;
+}
+li.lv1:nth-child(1) {
+  border-top: 1px solid #9eb8e0;
+}
+ul.lv2 {
+  display: none;
+}
+
+li.lv1:hover > a {
+  background-color: #9eb8e0;
+  color: #366140;
+}
+ul.lv2 li:hover > a {
+  background-color: #b5d8e9;
+  color: #3f9352;
+}
+/* main */
+main {
+  width: calc(100% - 200px);
+}
+
+.content1 {
+  height: 400px;
+  display: flex;
+}
+/* slide */
+.slide {
+  width: calc(100% - 230px);
+  overflow: hidden;
+  /* position: relative; */
+}
+.slide ul {
+  display: flex;
+  width: 300%;
+}
+
+.slide li {
+  position: relative;
+  height: 400px;
+  width: 100%;
+}
+
+.slide span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(15, 0, 128);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.slide01 {
+  background: url("../images/slide1.png") no-repeat;
+  background-size: cover;
+}
+.slide02 {
+  background: url("../images/slide2.png") no-repeat;
+  background-size: cover;
+}
+.slide03 {
+  background: url("../images/slide3.png") no-repeat;
+  background-size: cover;
+}
+
+/* direct */
+.direct {
+  height: 400px;
+  padding: 5px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.direct span {
+  font-size: 15px;
+  font-weight: bold;
+  background: yellow;
+  padding: 5px;
+}
+.direct a {
+  height: 400px;
+}
+.direct img {
+  width: 98%;
+}
+.direct p {
+  font-size: 13px;
+  line-height: 200%;
+  position: relative;
+  bottom: 100px;
+}
+
+.content2 {
+  height: 250px;
+  display: flex;
+}
+.content2 div {
+  width: 50%;
+}
+
+.content2 ul {
+  margin-left: 20px;
+}
+
+.content2 h3 {
+  background: rgb(70, 70, 237);
+  color: #fff;
+  display: inline-block;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.notice li {
+  line-height: 2.2;
+}
+.notice a {
+  color: #333;
+}
+.notice span {
+  float: right;
+}
+.notice li:hover {
+  text-decoration: underline;
+}
+
+.gallery {
+  justify-content: space-between;
+  align-items: center;
+  height: 233px;
+}
+.gallery li {
+  display: inline-block;
+  width: 25%;
+  margin-right: 45px;
+}
+.gallery a img {
+  width: 100%;
+}
+
+.gallery span {
+  position: relative;
+  left: 50px;
+  bottom: 30px;
+  background: aliceblue;
+}
+
+/* popup */
+.modal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.4);
+  /* display: none; */
+}
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 300px;
+  line-height: 2;
+  background: #fff;
+  border: 1px solid #333;
+  padding: 20px;
+}
+.popup h2 {
+  background: rgb(45, 72, 206);
+  color: #fff;
+  text-align: center;
+  padding: 5px 10px;
+}
+.popup p {
+  line-height: 160%;
+  padding: 5px;
+}
+.popup button {
+  position: absolute;
+  left: 80%;
+  width: 15%;
+  background: rgb(88, 189, 252);
+  color: #333;
+  border: 0;
+  padding: 3px 5px;
+  cursor: pointer;
+}
+/* footer */
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(206, 231, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer div img {
+  width: 200px;
+  filter: grayscale(1);
+}
+footer p {
+  width: 70%;
+  line-height: 160%;
+  text-align: center;
+}
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+}
