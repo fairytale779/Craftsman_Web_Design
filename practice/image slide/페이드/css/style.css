@@ -44,7 +44,7 @@ header {
   font-weight: 600;
   text-align: center;
   color: #000;
-  background: rgb(218, 204, 250, 0.8);
+  background: rgba(204, 225, 250, 0.8);
   padding: 10px 20px;
   border-radius: 3px;
 }
